@@ -23,7 +23,7 @@ class LogStash::Outputs::Email < LogStash::Outputs::Base
   config :to, :validate => :string, :required => true
 
   # The From setting for email - fully qualified email address for the From:
-  config :from, :validate => :string, :default => "logstash.alert@nowhere.com"
+  config :from, :validate => :string, :required => true
 
   # cc - send to others
   # See *to* field for accepted value description
